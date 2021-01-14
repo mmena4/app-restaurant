@@ -1,30 +1,26 @@
-* {
-  margin: 10px;
-  padding: 0px;
-  text-decoration: none;
-}
-
 body {
-  /*font raleway*/
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-nav {
+header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 30px 0px 20px;
 }
 
-p {
+.nav_text {
+  margin: 10px;
+}
+
+.nav_text h5 {
+  font-size: 25px;
+  margin: 0px;
+}
+
+.nav_text p {
   color: #b4b4b4;
-  font-size: 1.5vh;
+  font-size: 12px;
   letter-spacing: 0.07em;
-  font-weight: 500;
-}
-
-h6 {
-  font-size: 3vh;
-  line-height: 33px;
-  padding-bottom: 2vh;
 }
 
 .logo img {
@@ -34,9 +30,9 @@ h6 {
 
 /******FOOD CARDS*****/
 
-
 .food_cards {
   display: flex;
+  margin: 10px;
 }
 
 .card {
@@ -48,16 +44,20 @@ h6 {
   border-radius: 13px;
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  margin: 10px;
 }
 
 .card img {
   display: flex;
   justify-content: center;
   width: 60px;
+  margin: 10px;
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 15px;
+  margin: 5px;
+  color: #b4b4b4;
 }
 
 /****FOOD DETAILS*****/
@@ -82,12 +82,15 @@ h6 {
   justify-content: center;
 }
 
-.price {
+.card_text h1 {
   color: rgb(255, 191, 0);
   font-size: 25px;
+  padding: 15px;
 }
 
-
+.card_text span {
+  padding: 5px;
+}
 
 .counter {
   display: flex;
@@ -106,6 +109,7 @@ h6 {
   height: 40px;
   border: none;
   border-radius: 15px 15px 0px 0px;
+  margin-bottom: 10px;
 }
 
 .remove {
@@ -118,19 +122,21 @@ h6 {
   width: 45px;
   height: 40px;
   border-radius: 0px 0px 15px 15px;
+  margin-top: 10px;
 }
 
 /********FOOTER******/
 
 footer {
   position: fixed;
+  align-items: center;
+  justify-content: ;
   left: 0;
   bottom: 0;
   width: 100%;
   color: grey;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
+
+  padding: 20px;
   box-shadow: 0px 0px 90px 0.1px rgb(0, 0, 0, 0.4);
   background-color: white;
 }
@@ -139,11 +145,15 @@ footer {
   display: flex;
   position: absolute;
 
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  top: 0%;
 
   border-radius: 50px;
   font-size: 25px;
-  background-color: rgb(255, 131, 59);
-  padding: 10px;
+  background-color: #ff6900;
+  padding: 12px;
   box-shadow: 0px 0px 5px 2px rgb(0, 0, 0, 0.4);
   cursor: pointer;
 }
@@ -156,7 +166,7 @@ footer {
 }
 
 .icons i {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 950px) {
