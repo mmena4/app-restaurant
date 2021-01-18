@@ -17,7 +17,7 @@
       <header>
         <div class="nav_text">
           <h5>Food For Home</h5>
-          <p>Lorem ipsum dolor. sit amet consectetur adipisicing elit.</p>
+          <p>From our restaurant to you home</p>
         </div>
 
         <div class="logo">
@@ -26,19 +26,11 @@
             alt="Logo"
           />
         </div>
-
-
       </header>
 
+     
       <section class="food_cards">
-        <div class="card">
-          <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/tapas.svg"
-            alt="Tapas"
-          />
-          <p>Tapas</p>
-        </div>
-
+      <a href="#" onclick="showDesayunos()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/breakfast.svg"
@@ -46,6 +38,20 @@
           />
           <p>Desayunos</p>
         </div>
+      </a>
+
+      <a href=# onclick="showTapas()">
+        <div id="card" class="card">
+          <img
+            src="https://andreabcm.github.io/Proyecto-final/img/slider/tapas.svg"
+            alt="Tapas"
+          />
+         <p>Tapas</p>
+        </div>
+      </a>
+
+
+      <a href="#" onclick="showEnsaladas()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/salad.png"
@@ -53,6 +59,9 @@
           />
           <p>Ensaladas</p>
         </div>
+      </a>
+
+      <a href="#" onclick="showAlmuerzos()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/fastfood.svg"
@@ -60,6 +69,9 @@
           />
           <p>Almuerzos</p>
         </div>
+      </a>
+
+      <a href="#" onclick="showCena()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/dinner.svg"
@@ -67,6 +79,9 @@
           />
           <p>Cena</p>
         </div>
+      </a>
+
+      <a href="#" onclick="showPostres()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/desert.svg"
@@ -74,6 +89,9 @@
           />
           <p>Postres</p>
         </div>
+      </a>
+
+      <a href="#" onclick="showBebidas()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/bebidas.svg"
@@ -81,6 +99,9 @@
           />
           <p>Bebidas</p>
         </div>
+      </a>
+
+      <a href="#" onclick="showTodos()">
         <div class="card">
           <img
             src="https://andreabcm.github.io/Proyecto-final/img/slider/all.svg"
@@ -88,24 +109,249 @@
           />
           <p>Todos</p>
         </div>
+      </a>  
       </section>
 
-      <section class="food_detail">
-        <img
-          src="https://andreabcm.github.io/Proyecto-final/img/platos/ensalada01.jpg"
-          alt="salad"
-        />
-        <div class="card_text">
-          <h1>12€</b></h1> 
-          <span><b>Desayuno de la Casa</b></span>
-          <span>Con salsa ranch</span>
+   
+      <section id="desayunos">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://previews.123rf.com/images/denira/denira1603/denira160300050/56405362-tradicional-desayuno-caf%C3%A9-croissant-leche-aislado-en-un-fondo-blanco-.jpg"
+            alt="desayuno"
+          />
+          <div class="card_text">
+            <h1>5€</b></h1> 
+            <span><b>Desayuno de la Casa</b></span>
+            <span>Croisant con café con leche</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
         </div>
-        <div class="counter">
-          <button type="button" class="add">+</button>
-          <h5>1</h5>
-          <button type="button" class="remove">-</button>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://farm6.staticflickr.com/5657/20849840886_8f2c13bfc3.jpg"
+            alt="desayuno"
+          />
+          <div class="card_text">
+              <h1>12€</b></h1> 
+              <span><b>Desayuno americano</b></span>
+              <span>Tostadas, huevos y bacon</span>
+          </div>
+          <div class="counter">
+              <button type="button" class="add">+</button>
+              <h5>1</h5>
+              <button type="button" class="remove">-</button>
+          </div>
         </div>
       </section>
+
+
+      <section id="tapas">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://s1.eestatic.com/2019/09/11/cocinillas/recetas/aperitivos-y-entrantes/Videorreceta-Patatas-Salsa-Tomate-Aperitivos_y_entrantes_428468132_134365387_1706x960.jpg"
+            alt="patatas bravas"
+          />
+          <div class="card_text">
+            <h1>6€</b></h1> 
+            <span><b>Patatas de la casa</b></span>
+            <span>Patatas bravas con salsa picante</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.expob2b.es/uploads/fotos_noticias/2019/07/w800px_19820-159028-nuestras-tapas-calamares-a-la-andaluza.jpg"
+            alt="calamares"
+          />
+          <div class="card_text">
+              <h1>10€</b></h1> 
+              <span><b>Calamares fritos</b></span>
+              <span>Calamares fritos con limón</span>
+          </div>
+          <div class="counter">
+              <button type="button" class="add">+</button>
+              <h5>1</h5>
+              <button type="button" class="remove">-</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="ensaladas">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://cdn.kiwilimon.com/recetaimagen/20374/th5-640x426-8633.jpg"
+            alt="salad"
+          />
+          <div class="card_text">
+            <h1>6€</b></h1> 
+            <span><b>Ensalada de la casa</b></span>
+            <span>Ensalada del chef con fresas y almendras</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+       </section> 
+
+       <section id="almuerzos">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.miscosillasdecocina.com/wp-content/uploads/2014/02/bacalao-pilpil-e1491084486535.jpg"
+            alt="bacalao"
+          />
+          <div class="card_text">
+            <h1>12€</b></h1> 
+            <span><b>Bacalao al pil pil</b></span>
+            <span>Bacalao del atlántico norte al pil pil cocinado al horno</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.annarecetasfaciles.com/files/solomillo-al-vino.jpg"
+            alt="solomillo"
+          />
+          <div class="card_text">
+            <h1>14€</b></h1> 
+            <span><b>Solomillo al vino</b></span>
+            <span>Deliciosos medallones de solimillo horneados al vino blanco</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+       </section> 
+
+       <section id="cena">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.comedera.com/wp-content/uploads/2018/05/pollo-al-limon.jpg"
+            alt="Pollo al limón"
+          />
+          <div class="card_text">
+            <h1>8€</b></h1> 
+            <span><b>Pollo al limón</b></span>
+            <span>Delicioso pollo al limón con especias caseras y patatas panaderas</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/10/sopafideo.jpg"
+            alt="Sopa de fideos"
+          />
+          <div class="card_text">
+            <h1>5,50€</b></h1> 
+            <span><b>Sopa de fideos</b></span>
+            <span>Sopa de fideos casera al caldo de pollo</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+       </section> 
+
+       <section id="postres">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://2.bp.blogspot.com/-OG60w-oH3Bs/WvNyBBBrxrI/AAAAAAAANWA/94phxTFKz6EvCehb36VZv2o5aLwNHO1mACLcBGAs/s1600/hojaldritos-crema-miguelitos-02b.jpg"
+            alt="Fantasía de hojaldre"
+          />
+          <div class="card_text">
+            <h1>4€</b></h1> 
+            <span><b>Fantasía de hojaldre</b></span>
+            <span>Bocaditos de hojaldre casero rellenos de crema</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.hola.com/imagenes/cocina/recetas/20200217160866/receta-postre-trifasico-chocolate-nata-fresa/0-784-830/postre-trifasico-adobe-m.jpg"
+            alt="trifásico de chocolate"
+          />
+          <div class="card_text">
+            <h1>4€</b></h1> 
+            <span><b>Fantasía Trifásico</b></span>
+            <span>Delicioso postre trifásico de chocolate, nata y fresas</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+       </section> 
+
+       <section id="bebidas">
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://www.ecestaticos.com/image/clipping/4ed11a52573d7fdd3c60c0cea4f04fa8/el-gran-negocio-del-agua-mineral-menos-calidad-y-precios-desorbitados.jpg"
+            alt="agua"
+          />
+          <div class="card_text">
+            <h1>1,50€</b></h1> 
+            <span><b>Agua mineral</b></span>
+            <span>Agua mineral Font Vella</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+        <div class="food_details">
+          <img  class="food_img"
+            src="https://previews.123rf.com/images/denismart/denismart1802/denismart180200051/98057806-londres-reino-unido-02-de-febrero-de-2018-botella-fr%C3%ADa-y-vaso-de-bebida-cl%C3%A1sica-coca-cola-sobre-fondo-bl.jpg"
+            alt="coca-cola"
+          />
+          <div class="card_text">
+            <h1>2€</b></h1> 
+            <span><b>Coca-cola</b></span>
+            <span>Refresco de cola frío</span>
+          </div>
+          <div class="counter">
+            <button type="button" class="add">+</button>
+            <h5>1</h5>
+            <button type="button" class="remove">-</button>
+          </div>
+        </div>
+
+       </section> 
+
+       <section id="todos"></section> 
+
 
       <footer>
         <div class="main_icon">

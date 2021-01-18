@@ -1,14 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+    
+}
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 100px;
+  border: 2px solid green;
+
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px 0px 20px;
+  padding: 0px 150px 0px 150px;
 }
 
 .nav_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -32,6 +44,8 @@ header {
 
 .food_cards {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 10px;
 }
 
@@ -40,7 +54,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 15vh;
-  height: 18vh;
+  height: 21vh;
   border-radius: 13px;
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -61,16 +75,96 @@ header {
 }
 
 /****FOOD DETAILS*****/
-
-.food_detail {
+#tapas {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 200px;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+  border: 1px solid red;
 }
 
-.food_detail img {
-  width: 20vw;
-  height: 28vw;
+#desayunos {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#ensaladas {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#almuerzos {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#cena {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#postres {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#bebidas {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+#todo {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  display: none;
+  max-width: 800px;
+  display: none;
+}
+
+.food_details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  border: 1px solid red;
+}
+
+.food_img {
+  max-width: 20vw;
+  height: 20vw;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -80,12 +174,14 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
 }
 
 .card_text h1 {
   color: rgb(255, 191, 0);
   font-size: 25px;
-  padding: 15px;
 }
 
 .card_text span {
@@ -105,11 +201,14 @@ header {
   align-items: center;
   font-size: 20px;
   background-color: rgb(217, 217, 217);
-  width: 45px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
   border: none;
   border-radius: 15px 15px 0px 0px;
-  margin-bottom: 10px;
+}
+
+.counter h5 {
+  margin: 10px;
 }
 
 .remove {
@@ -119,20 +218,21 @@ header {
   font-size: 20px;
   background-color: rgb(217, 217, 217);
   border: none;
-  width: 45px;
-  height: 40px;
+  width: 40px;
+  height: 35px;
   border-radius: 0px 0px 15px 15px;
-  margin-top: 10px;
 }
+
 
 /********FOOTER******/
 
 footer {
+
   position: fixed;
   align-items: center;
-  justify-content: ;
   left: 0;
   bottom: 0;
+  margin-top: 150px;
   width: 100%;
   color: grey;
 
@@ -144,12 +244,9 @@ footer {
 .main_icon {
   display: flex;
   position: absolute;
-
   left: 50%;
   transform: translate(-50%, -50%);
-
   top: 0%;
-
   border-radius: 50px;
   font-size: 25px;
   background-color: #ff6900;
@@ -170,6 +267,13 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0;
+ 
+  }
   .logo img {
     height: 60px;
   }
