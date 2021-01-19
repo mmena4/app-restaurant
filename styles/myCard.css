@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(231, 231, 231);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  margin: auto;
+}
+
+header button {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-left: 20px;
+  border: none;
+  background-color: rgb(229, 229, 229);
+}
+
+header span {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 65px;
+  cursor: pointer;
+}
+
+header a button {
+  background-color:  #fe6b01;
+}
+
+
+header a button:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/**************FOOTER****************/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 30px 30px 0px 0px;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: #fe6b01;
+  color: white;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.precios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.enunciados {
+  display: flex;
+  flex-direction: column;
+}
+
+.totales {
+  display: flex;
+  flex-direction: column;
+}
+
+.botonesCarrito {
+  display: flex;
+  flex-direction: row;
+}
+
+.botonesCarrito button {
+  padding: 8px;
+  margin: 5px;
+  width: auto;
+  border-radius: 8px;
+  color: red;
+}

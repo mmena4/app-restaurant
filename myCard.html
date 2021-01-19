@@ -3,18 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="myCard.css" />
+    <link rel="stylesheet" href="styles/myCard.css" />
 
     <title>Menú Restaurante</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
   </head>
 
   <body>
     <header>
       <a href="index.html"><button type="button" class="button"><</button></a>
       <span><b>My Card</b></span>
+      <div class="logo">
+        
+        <img
+          src="https://andreabcm.github.io/Proyecto-final/img/logo.png"
+          alt="Logo"
+        />
+      </div>
+
     </header>
 
-    <footer>
+
+
+    <main>
+      <tbody id="cartContainer"> 
+
+      </tbody>
+    </main>
+
+    <footer id='cart'>
       <div class="precios">
         <div class="enunciados">
           <span>Subtotal</span>
@@ -30,10 +47,16 @@
           <span class="total">0eur</span>
         </div>
       </div>
+      
+      <div class="botonesCarrito">
+      <button type="button" id="send">Enviar pedido</button>
+      <button type="button" id="emptyCart">Vaciar carrito</button>
+      </div>  
 
-      <button type="button" class="button2">Enviar pedido</button>
+
     </footer>
-
+    <script src="cart.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>

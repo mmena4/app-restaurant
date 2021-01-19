@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú Restaurante</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
   </head>
   <body>
 
       <header>
         <div class="nav_text">
-          <h5>Food For Home</h5>
+          <h5 id="test">Food For Home</h5>
           <p>From our restaurant to you home</p>
         </div>
 
         <div class="logo">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/logo.png"
+            src="img/logo.png"
             alt="Logo"
           />
         </div>
@@ -33,8 +34,7 @@
       <a href="#" onclick="showDesayunos()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/breakfast.svg"
-            alt="Desayunos"
+            src="img/cafe.svg"
           />
           <p>Desayunos</p>
         </div>
@@ -43,7 +43,7 @@
       <a href=# onclick="showTapas()">
         <div id="card" class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/tapas.svg"
+            src="img/tapas.svg"
             alt="Tapas"
           />
          <p>Tapas</p>
@@ -54,8 +54,7 @@
       <a href="#" onclick="showEnsaladas()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/salad.png"
-            alt="Ensaladas"
+            src="img/ensalada.svg"
           />
           <p>Ensaladas</p>
         </div>
@@ -64,8 +63,7 @@
       <a href="#" onclick="showAlmuerzos()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/fastfood.svg"
-            alt="Almuerzos"
+            src="img/almuerzos.svg"
           />
           <p>Almuerzos</p>
         </div>
@@ -74,7 +72,7 @@
       <a href="#" onclick="showCena()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/dinner.svg"
+            src="img/cena.svg"
             alt="Cena"
           />
           <p>Cena</p>
@@ -84,7 +82,7 @@
       <a href="#" onclick="showPostres()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/desert.svg"
+            src="img/postres.svg"
             alt="Postres"
           />
           <p>Postres</p>
@@ -94,7 +92,7 @@
       <a href="#" onclick="showBebidas()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/bebidas.svg"
+            src="img/bebidas.svg"
             alt="Bebidas"
           />
           <p>Bebidas</p>
@@ -104,7 +102,7 @@
       <a href="#" onclick="showTodos()">
         <div class="card">
           <img
-            src="https://andreabcm.github.io/Proyecto-final/img/slider/all.svg"
+            src="img/todos.svg"
             alt="Todos"
           />
           <p>Todos</p>
@@ -112,7 +110,7 @@
       </a>  
       </section>
 
-   
+   <main id="foodList">
       <section id="desayunos">
         <div class="food_details">
           <img  class="food_img"
@@ -121,15 +119,17 @@
           />
           <div class="card_text">
             <h1>5€</b></h1> 
-            <span><b>Desayuno de la Casa</b></span>
-            <span>Croisant con café con leche</span>
+            <h4><b>Desayuno de la Casa</b></h4>
+            <h5>Croisant con café con leche</h5>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
-            <h5>1</h5>
-            <button type="button" class="remove">-</button>
+          <div id="counter">
+            <button type="button" class="addBtn" data-id="1">+</button>
+            <h5>0</h5>
+            <button type="button" class="removeBtn">-</button>
           </div>
         </div>
+
+
 
         <div class="food_details">
           <img  class="food_img"
@@ -138,13 +138,13 @@
           />
           <div class="card_text">
               <h1>12€</b></h1> 
-              <span><b>Desayuno americano</b></span>
-              <span>Tostadas, huevos y bacon</span>
+              <h4><b>Desayuno americano</b></h4>
+              <h5>Tostadas, huevos y bacon</h5>
           </div>
-          <div class="counter">
-              <button type="button" class="add">+</button>
-              <h5>1</h5>
-              <button type="button" class="remove">-</button>
+          <div id="counter">
+              <button type="button"  class="addBtn" data-id="2">+</button>
+              <h5>0</h5>
+              <button type="button" class="removeBtn">-</button>
           </div>
         </div>
       </section>
@@ -158,13 +158,13 @@
           />
           <div class="card_text">
             <h1>6€</b></h1> 
-            <span><b>Patatas de la casa</b></span>
-            <span>Patatas bravas con salsa picante</span>
+            <h4><b>Patatas de la casa</b></h4>
+            <h5>Patatas bravas con salsa picante</h5>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" class="addBtn" data-id="3">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" class="removeBtn">-</button>
           </div>
         </div>
 
@@ -175,13 +175,13 @@
           />
           <div class="card_text">
               <h1>10€</b></h1> 
-              <span><b>Calamares fritos</b></span>
-              <span>Calamares fritos con limón</span>
+              <h4><b>Calamares fritos</b></h4>
+              <h5>Calamares fritos con limón</h5>
           </div>
-          <div class="counter">
-              <button type="button" class="add">+</button>
+          <div id="counter">
+              <button type="button" class="addBtn" data-id="4">+</button>
               <h5>1</h5>
-              <button type="button" class="remove">-</button>
+              <button type="button" class="removeBtn">-</button>
           </div>
         </div>
       </section>
@@ -194,16 +194,21 @@
           />
           <div class="card_text">
             <h1>6€</b></h1> 
-            <span><b>Ensalada de la casa</b></span>
-            <span>Ensalada del chef con fresas y almendras</span>
+            <h4><b>Ensalada de la casa</b></h4>
+            <h5>Ensalada del chef con fresas y almendras</h5>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" class="addBtn" data-id="5">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" class="removeBtn">-</button>
           </div>
         </div>
        </section> 
+
+
+
+
+
 
        <section id="almuerzos">
         <div class="food_details">
@@ -216,10 +221,10 @@
             <span><b>Bacalao al pil pil</b></span>
             <span>Bacalao del atlántico norte al pil pil cocinado al horno</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
 
@@ -233,10 +238,10 @@
             <span><b>Solomillo al vino</b></span>
             <span>Deliciosos medallones de solimillo horneados al vino blanco</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
        </section> 
@@ -252,10 +257,10 @@
             <span><b>Pollo al limón</b></span>
             <span>Delicioso pollo al limón con especias caseras y patatas panaderas</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
 
@@ -269,10 +274,10 @@
             <span><b>Sopa de fideos</b></span>
             <span>Sopa de fideos casera al caldo de pollo</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
        </section> 
@@ -288,10 +293,10 @@
             <span><b>Fantasía de hojaldre</b></span>
             <span>Bocaditos de hojaldre casero rellenos de crema</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
 
@@ -305,10 +310,10 @@
             <span><b>Fantasía Trifásico</b></span>
             <span>Delicioso postre trifásico de chocolate, nata y fresas</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
        </section> 
@@ -324,10 +329,10 @@
             <span><b>Agua mineral</b></span>
             <span>Agua mineral Font Vella</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
 
@@ -341,16 +346,18 @@
             <span><b>Coca-cola</b></span>
             <span>Refresco de cola frío</span>
           </div>
-          <div class="counter">
-            <button type="button" class="add">+</button>
+          <div id="counter">
+            <button type="button" id="add">+</button>
             <h5>1</h5>
-            <button type="button" class="remove">-</button>
+            <button type="button" id="remove">-</button>
           </div>
         </div>
 
        </section> 
 
        <section id="todos"></section> 
+
+   </main>
 
 
       <footer>
@@ -364,8 +371,9 @@
           <i class="far fa-user"></i>
         </div>
       </footer>
-    
 
-    <script src="script.js"></script>
+
+      <script src="cart.js"></script>
+      <script src="script.js"></script>
   </body>
 </html>
