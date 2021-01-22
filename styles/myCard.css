@@ -47,9 +47,8 @@ header span {
 }
 
 header a button {
-  background-color:  #fe6b01;
+  background-color: #fe6b01;
 }
-
 
 header a button:hover {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
@@ -57,6 +56,8 @@ header a button:hover {
 
 
 /**************FOOTER****************/
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -71,9 +72,6 @@ footer {
   color: white;
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 .precios {
   display: flex;
@@ -96,6 +94,7 @@ footer {
 .botonesCarrito {
   display: flex;
   flex-direction: row;
+
 }
 
 .botonesCarrito button {
@@ -103,5 +102,11 @@ footer {
   margin: 5px;
   width: auto;
   border-radius: 8px;
-  color: red;
+  color: black;
+  background-color: white;
+}
+
+.botonesCarrito button:hover {
+  background-color: #fe6b01;
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
 }

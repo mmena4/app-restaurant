@@ -1,4 +1,20 @@
+/*
+function showMainBody() {
+    const mainBody = document.querySelector('#mainBody');
+    mainBody.style.display = 'flex';
+    checkOut.style.display = 'none';
 
+};
+   
+//ok
+function showCheckoutBody() {
+        const checkOut = document.querySelector('#');
+        checkOut.style.display = 'flex';
+        mainBody.style.display = 'none';
+
+};
+
+*/
 function showDesayunos() {
     const desayunos = document.querySelector('#desayunos');
     desayunos.style.display = 'flex';
