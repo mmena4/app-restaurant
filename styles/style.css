@@ -197,7 +197,7 @@ header {
   justify-content: center;
 }
 
-.addBtn {
+#add {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,7 @@ header {
   margin: 10px;
 }
 
-.removeBtn {
+#remove {
   display: flex;
   justify-content: center;
   align-items: center;
