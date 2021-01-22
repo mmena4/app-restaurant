@@ -6,7 +6,7 @@
 
 
 /******* */
-
+/*
 const cart = document.querySelector('#cart');
 
 const cartContainer = document.querySelector('#cart_Container');

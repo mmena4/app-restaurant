@@ -114,7 +114,7 @@
         </a>  
       </section>
 
-      <main id="foodList">
+      <main>
           <section id="desayunos">
             <div class="food_details">
               <img  class="food_img"
@@ -127,9 +127,9 @@
                 <h5>Croisant con café con leche</h5>
               </div>
               <div id="counter">
-                <button type="button" class="addBtn" data-id="1">+</button>
+                <button type="button" id="add">+</button>
                 <h5>0</h5>
-                <button type="button" class="removeBtn">-</button>
+                <button type="button" id="remove">-</button>
               </div>
             </div>
 
@@ -146,9 +146,9 @@
                   <h5>Tostadas, huevos y bacon</h5>
               </div>
               <div id="counter">
-                  <button type="button"  class="addBtn" data-id="2">+</button>
-                  <h5>0</h5>
-                  <button type="button" class="removeBtn">-</button>
+                <button type="button" id="add">+</button>
+                <h5>0</h5>
+                <button type="button" id="remove">-</button>
               </div>
             </div>
           </section>
@@ -166,9 +166,9 @@
                 <h5>Patatas bravas con salsa picante</h5>
               </div>
               <div id="counter">
-                <button type="button" class="addBtn" data-id="3">+</button>
-                <h5>1</h5>
-                <button type="button" class="removeBtn">-</button>
+                <button type="button" id="add">+</button>
+                <h5>0</h5>
+                <button type="button" id="remove">-</button>
               </div>
             </div>
 
@@ -183,9 +183,9 @@
                   <h5>Calamares fritos con limón</h5>
               </div>
               <div id="counter">
-                  <button type="button" class="addBtn" data-id="4">+</button>
-                  <h5>1</h5>
-                  <button type="button" class="removeBtn">-</button>
+                <button type="button" id="add">+</button>
+                <h5>0</h5>
+                <button type="button" id="remove">-</button>
               </div>
             </div>
           </section>
@@ -202,9 +202,9 @@
                 <h5>Ensalada del chef con fresas y almendras</h5>
               </div>
               <div id="counter">
-                <button type="button" class="addBtn" data-id="5">+</button>
-                <h5>1</h5>
-                <button type="button" class="removeBtn">-</button>
+                <button type="button" id="add">+</button>
+                <h5>0</h5>
+                <button type="button" id="remove">-</button>
               </div>
             </div>
           </section> 
@@ -227,7 +227,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -244,7 +244,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -263,7 +263,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -280,7 +280,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -299,7 +299,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -316,7 +316,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -335,7 +335,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -352,7 +352,7 @@
               </div>
               <div id="counter">
                 <button type="button" id="add">+</button>
-                <h5>1</h5>
+                <h5>0</h5>
                 <button type="button" id="remove">-</button>
               </div>
             </div>
@@ -366,7 +366,7 @@
 
       <section class="footer">
         <div class="main_icon">
-          <a href="myCard.html" onclick="showCheckoutBody()"><i class="fas fa-shopping-bag"></i></a>
+          <a href="myCard.html" ><i class="fas fa-shopping-bag"></i></a>
         </div>
         <div class="icons">
           <i class="fas fa-home"></i>
@@ -375,11 +375,10 @@
           <i class="far fa-user"></i>
         </div>
       </section>
-    </div>
+  
 
  
-          
-      <script src="cart.js"></script>
+
       <script src="script.js"></script>
   </body>
 </html>
